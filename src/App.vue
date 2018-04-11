@@ -1,7 +1,6 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+  <div>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error delectus totam ipsam doloremque, et. Alias recusandae illo itaque quo labore, perferendis nulla vero sunt vel, laudantium, similique esse ducimus atque.
   </div>
 </template>
 
