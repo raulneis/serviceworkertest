@@ -1,7 +1,18 @@
 <template>
     <div>
-        <router-link to="login">Login</router-link>
-        <router-link to="signin">SignIn</router-link>
+        <h1>Login</h1>
+        <el-form ref="form" :model="form" label-width="120px">
+            <el-form-item label="Email">
+                <el-input placeholder="johndoe@example.com" v-model="form.email"></el-input>
+            </el-form-item>
+            <el-form-item>
+                <el-input placeholder="Password..." type="password" v-model="form.password"></el-input>
+            </el-form-item>
+            <el-form-item>
+                <el-button type="primary" @click="loginUser">Login</el-button>
+                <el-button @click="createUser">Create</el-button>
+            </el-form-item>
+        </el-form>
     </div>
 </template>
 
@@ -9,7 +20,7 @@
 import firebase from '../assets/scripts/firebase'
 
 export default {
-    name: 'HelloWorld',
+    name: 'Login',
     data () {
         return {
             loading: true,

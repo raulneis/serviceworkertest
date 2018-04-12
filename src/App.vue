@@ -1,10 +1,11 @@
 <template>
   <div>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error delectus totam ipsam doloremque, et. Alias recusandae illo itaque quo labore, perferendis nulla vero sunt vel, laudantium, similique esse ducimus atque.
+     <router-view></router-view>
   </div>
 </template>
 
 <script>
+
 export default {
   name: 'App'
 }
